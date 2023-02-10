@@ -21,10 +21,10 @@ class TrainsTableSeeder extends Seeder
             $myTrains->azienda = $faker->company();
             $myTrains->stazione_di_partenza = $faker->city();
             $myTrains->stazione_di_arrivo = $faker->city();
-            $myTrains->orario_di_partenza = $faker->date();
-            $myTrains->orario_di_arrivo = $faker->date();
+            $myTrains->orario_di_partenza = $faker->dateTime();
+            $myTrains->orario_di_arrivo = $faker->dateTime();
             $myTrains->codice_treno = $faker->bothify('?????-#####');
-            $myTrains->numero_carrozze = $faker->numberBetween(0, 15);
+            $myTrains->numero_carrozze = $faker->numberBetween(1, 15);
             $myTrains->in_orario = $faker->boolean();
             $myTrains->cancellato = $faker->boolean();
             $myTrains->save();

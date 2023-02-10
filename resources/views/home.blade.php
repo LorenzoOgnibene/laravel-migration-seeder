@@ -20,8 +20,8 @@
         <div class="container">
             <div class="row flex-wrap">
                 @foreach ($trains as $train)
-                    <div class="col-3">
-                        <div class="card p-4" >
+                    <div class="col-3 ">
+                        <div class="card" style="width: 100%;" >
                             <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clipartbest.com%2Fcliparts%2FMTL%2F599%2FMTL599oac.png&f=1&nofb=1&ipt=d4234b82e897c38d992d1b38974d6d4ca7bd47f174e69b00b33824874385dc8a&ipo=images" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                             <h5 class="card-title">Azienda: {{$train->azienda}}</h5>
